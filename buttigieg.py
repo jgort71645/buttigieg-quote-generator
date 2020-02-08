@@ -1,7 +1,7 @@
 import numpy as np
 
 def buzzword():
-    N = 46
+    N = 49
     c = np.ceil(N*np.random.uniform())
     if c == 1:
         return "hope"
@@ -95,9 +95,15 @@ def buzzword():
         return "solutions"
     if c == 46:
         return "wine cave"
+    if c == 47:
+        return "dream"
+    if c == 48:
+        return "justice"
+    if c == 49:
+        return "prosperity"
     
 def badword():
-    N = 21
+    N = 22
     c = np.ceil(N*np.random.uniform())
     if c == 1:
         return "division"
@@ -141,6 +147,8 @@ def badword():
         return "dysfunction"
     if c == 21:
         return "corruption"
+    if c == 22:
+        return "injustice"
 
 def buzzverb():
     N = 6
@@ -202,9 +210,9 @@ def quote():
                 +f"If you're ready to build an American {buzzword()} defined by {buzzword()},\r\n"
                 +f"this is our chance.")
     if c == 10:
-        return (f"Your {buzzword()} should never be determined by who you are, what you look like,\r\n"
-                +f"or whom you love. Yet Black Americans are disproportionately affected\r\n"
-                +f"by {badword()}. It's unacceptable.\r\n"
+        return (f"Your {buzzword()} should never be determined by who you are, what you \r\n"
+                +f"look like, or whom you love. Yet Black Americans are disproportionately\r\n"
+                +f"affected by {badword()}. It's unacceptable.\r\n"
                 +f"My White House will commit to ending the {badword()} epidemic by 2030.")
     if c == 11:
         return (f"If you're ready to build an American {buzzword()} defined by {buzzword()} in the\r\n"
@@ -265,7 +273,7 @@ def quote():
                 +f"chip in here: https://www.webstaurantstore.com/49839/mayonnaise.html")
     if c == 27:
         return (f"My {buzzword()} will {buzzverb()} Americans with {buzzword()},\r\n"
-                +f"not {badverb()} Americans with {badword()}")
+                +f"not {badverb()} Americans with {badword()}.")
     
 def mayo(t=1):
     for i in range(t):
