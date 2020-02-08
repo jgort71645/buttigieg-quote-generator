@@ -190,7 +190,7 @@ def quote():
         return (f"{buzzword().capitalize()} struggles affect every {buzzword()}, every {buzzword()},\r\n"
                 +f"every {buzzword()}, every {buzzword()}.\r\n"
                 +f"I will be a president who not only works to get the {buzzword()} right,\r\n"
-                +f"but gives {buzzword()} to those struggles")
+                +f"but gives {buzzword()} to those struggles.")
     if c == 4:
         return f"This is an extraordinary moment for the {buzzword()} we're building."
     if c == 5:
