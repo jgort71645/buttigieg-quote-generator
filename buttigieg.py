@@ -167,7 +167,7 @@ def badverb():
         return "divide"
     
 def quote():
-    N = 26
+    N = 27
     c = np.ceil(N*np.random.uniform())
     if c == 1:
         return (f"I believe the {buzzword()} belongs to people of {buzzword()} and no {buzzword()}\r\n"
@@ -242,7 +242,8 @@ def quote():
     if c == 20:
         return (f"I will not pursue {buzzword()} by telling people they can't be at\r\n"
                 +f"our side if they're not with us 100% of the time.\r\n"
-                +f"This is a time for {buzzword()}, not {badword()}, for {buzzword()}, not {badword()}.")
+                +f"This is a time for {buzzword()}, not {badword()},\r\n"
+                +f"for {buzzword()}, not {badword()}.")
     if c == 21:
         return (f"I'm not interested in labels. I'm interested in the style of\r\n"
                 +f"{buzzword()} that we need to put forward to finally turn the page.")
@@ -262,6 +263,9 @@ def quote():
     if c == 26:
         return (f"If you've had enough of the {badword()} and {badword()} in Washington,\r\n"
                 +f"chip in here: https://www.webstaurantstore.com/49839/mayonnaise.html")
+    if c == 27:
+        return (f"My {buzzword()} will {buzzverb()} Americans with {buzzword()},\r\n"
+                +f"not {badverb()} Americans with {badword()}")
     
 def mayo(t=1):
     for i in range(t):
